@@ -1,0 +1,35 @@
+.vonnect__footbarContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.individual__component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #666;
+  border-right: 1px solid #ccc;
+}
+
+.individual__component + .individual__component {
+  border-left: 1px solid #ccc;
+}
+
+.individual__component:last-child {
+  border-right: none;
+}
+
+.individual__component img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}

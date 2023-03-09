@@ -1,0 +1,16 @@
+.vonnect__customerHome__content{
+  padding-top: 60px;
+}
+
+.vonnect__customerHome__services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.vonnect__customerHome__content h4{
+  padding-left: 11px;
+  font-weight: 500;
+}
+

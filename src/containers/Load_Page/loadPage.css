@@ -1,0 +1,12 @@
+.vonnect_loadpage {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+}
+
+
+@media screen and (max-width: 550){}

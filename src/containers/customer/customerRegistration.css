@@ -1,0 +1,80 @@
+.vonnect__customerRegistration-container{
+  display:flex;
+ 
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vonnect__customerRegistration-container__header{
+ margin-bottom: 2rem;
+ text-align: left;
+ font-size: 18px;
+}
+
+.vonnect__customerRegistration-container__input{
+  display:flex;
+  display: row;
+  width: 15rem;
+  align-items: center;
+}
+
+.vonnect__customerRegistration-container__input input{
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-color: grey;
+  border-radius: 40px;
+  min-height: 2rem;
+  font-size: 15px;
+  line-height: 20px;
+
+}
+
+.vonnect__customerRegistration-container__input img{
+  width: 20px;
+  height: 25px;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.vonnect__customerRegistration-container__btn button{
+    background: black;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 100px;
+    margin: 2rem;
+    align-items: center;
+  
+    /*text stuff:*/
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height:20px;
+    font-weight: 500;
+    color: white;
+    
+    padding: 0.5rem 1rem;
+}
+
+.vonnect__customerRegistration-container__btn-color button{
+  background: var(--gradient-bar);
+}
+
+.vonnect__menuContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

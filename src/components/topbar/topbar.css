@@ -1,0 +1,17 @@
+.vonnectLogo__topbar-container{
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: white;
+  padding: 0.3rem;
+
+}
+
+.vonnectLogo__topbar-container img{
+ width: 60px;
+ height: 40px;
+}

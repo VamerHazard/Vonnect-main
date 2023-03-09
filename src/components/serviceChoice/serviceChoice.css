@@ -1,0 +1,16 @@
+.vonnect__serviceChoice-container {
+  display: inline-block;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(180deg, blue, purple) 1;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0.1rem;
+}
+
+.vonnect__serviceChoice__component img{
+  width: 72px;
+  height: 72px;
+}

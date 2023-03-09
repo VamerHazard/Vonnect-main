@@ -1,0 +1,49 @@
+.typeReg__container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeReg__container__header{
+  font-family: var(--font-family);
+  position: relative;
+}
+
+.typeReg__container__header h1{
+  font-size: 34px;
+  line-height: 42px;
+  color: black;
+  font-weight: 800;
+  text-align: center;
+
+  margin-bottom: 1rem;
+}
+
+.typeReg__container__btn{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+
+.typeReg__container__btn button{
+  background: var(--gradient-bar);
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 250px;
+  margin-bottom: 2rem;
+  align-items: center;
+
+  /*text stuff:*/
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height:35px;
+  font-weight: 700;
+  color: white;
+  
+  padding: 0.5rem 1rem;
+}

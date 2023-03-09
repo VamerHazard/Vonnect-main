@@ -1,0 +1,75 @@
+*{
+  font-family: var(--font-family);
+}
+
+* input{
+  padding: 0.5rem 1rem;
+  text-align: center;
+  box-shadow: none;
+  outline: none;
+  border-radius: 5px;
+  border-color: #ccc;
+  min-height: 2.5rem;
+  font-size: 15px;
+  line-height: 20px;
+  min-width: 275px;
+  width: 100%;
+
+}
+
+.vonnect__profileEdit-container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.vonnect__profileEdit__address-billing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vonnect__profileEdit__inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+
+.vonnect__profileEdit__inputBox p{
+  display: flex;
+  font-weight: 500;
+  align-items: flex-end;
+}
+
+.vonnect__profileEdit__address-billing img{
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 1rem 1rem 0rem 1rem;
+  opacity: 100%;
+}
+
+.vonnect__profileEdit__submit button{
+  background: var(--gradient-bar);
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 100px;
+  margin: 2rem;
+  align-items: center;
+
+  /*text stuff:*/
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height:20px;
+  font-weight: 500;
+  color: white;
+  
+  padding: 1rem 3rem;
+}
