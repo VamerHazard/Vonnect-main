@@ -34,7 +34,7 @@ text-decoration: none;
 }
 
 .gradient__text{
-  background: var(--gradient-text);
+  background: var(--gradient-text-new);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -90,12 +90,4 @@ text-decoration: none;
   .section__margin {
     padding: 4rem 2rem;
   }
-}
-
-.vonnect__Customer__footer{
-
-}
-
-.vonnect__Customer__header{
-  
 }
