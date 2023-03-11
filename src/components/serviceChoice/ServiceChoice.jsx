@@ -7,9 +7,8 @@ const ServiceChoice = ({rdr, imgSource, serviceName}) => {
     <Link to={rdr}>
         <div className='vonnect__serviceChoice-container'>
           <div className='vonnect__serviceChoice__component'>
-           <button><img src={imgSource} alt={serviceName}/>
+           <img src={imgSource} alt={serviceName}/>
            <p>{serviceName}</p>
-           </button>
           </div>
         </div>
     </Link>

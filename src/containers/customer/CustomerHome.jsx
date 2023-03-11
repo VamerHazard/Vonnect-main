@@ -3,43 +3,41 @@ import {Footbar, ServiceChoice, Topbar} from '../../components';
 import './customerHome.css'
 
 const services = [
-  {pageName: 'plumbing', 
-  location: '/home', /* /home */
+  {pageName: 'Plumbing', 
+  location: '/Plumber', /* /home */
   imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/plumbing.png'},
-  {pageName: 'yup', 
-  location: '', /* /logs */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/electrical.png'},
-  {pageName: 'Electricity', 
-  location: '', /* /customerSupport */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/roller-brush.png'},
-  {pageName: 'Smn else', 
-  location: '', /* /profile */
+  {pageName: 'Cleaning', 
+  location: '/Cleaners', /* /logs */
+  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/housekeeping.png'},
+  {pageName: 'Painter', 
+  location: '/Painter', /* /customerSupport */
+  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/light-off.png'},
+  {pageName: 'Gardeners', 
+  location: '/Gardeners', /* /profile */
+  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/garden-shears.png'},
+  {pageName: 'Grocery', 
+  location: '/Grocery', /* /profile */
   imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'},
-  {pageName: 'Smn else', 
-  location: '', /* /profile */
+  {pageName: 'Electrician', 
+  location: '/Electrician', /* /profile */
   imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'},
-  {pageName: 'Smn else', 
-  location: '', /* /profile */
+  {pageName: 'Plumber', 
+  location: '/Plumber', /* /profile */
   imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'},
-  {pageName: 'Smn else', 
-  location: '', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'},
-  {pageName: 'Smn else', 
-  location: '', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'},
-  {pageName: 'Smn else', 
-  location: '', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'}
+  {pageName: 'Tutors', 
+  location: '/Tutors', /* /profile */
+  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/classroom.png'},
+  {pageName: 'Chef', 
+  location: '/Chef', /* /profile */
+  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/chef-hat.png'}
 ]
 
 
 const CustomerHome = () => {
   return (
-    
     <div className='vonnect__customerHome-container'>
-      <Topbar/>
         <div className='vonnect__customerHome__content'>
-          <h4>Services</h4>
+          <h4 className='gradient__text'>Services</h4>
             <div classname='vonnect__customerHome__services'>
               {services.map((object) => (<ServiceChoice rdr={object.location} imgSource={object.imgSource} serviceName={object.pageName}/>))}
             </div>

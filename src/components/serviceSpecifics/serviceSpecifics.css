@@ -1,0 +1,59 @@
+.vonnect__serviceSpecifics__container{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.topbar{
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.topbar img{
+  margin-right: 1rem;
+  width: 22px;
+  height: 22px;
+}
+
+.topbar h3{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.vonnect__serviceSpecifics__serviceTypes{
+  margin-top: 40px;
+  
+}
+
+.vonnect__serviceSpecifics__serviceBlock{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1rem 1rem;
+}
+
+.vonnect__serviceSpecifics__top-section h3{
+  background: linear-gradient(rgb(26, 109, 255) -0.42%, rgb(200, 34, 255) 100.42%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.vonnect__serviceSpecifics__serviceBlock img {
+  margin-left: auto;
+  margin-right: 0;
+  width: 50px;
+  height: 40px;
+}
+
