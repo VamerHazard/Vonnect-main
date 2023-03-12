@@ -1,0 +1,30 @@
+.ratings {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #e2be22;
+}
+
+.ratings__star {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+  background-color: #ddd;
+  clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+}
+
+.ratings__star--full {
+  background-color: #e2be22;
+}
+
+.ratings__star--half::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #e2be22;
+  clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 50% 50%);
+}

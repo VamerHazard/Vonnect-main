@@ -17,3 +17,7 @@
   color: var(gradient__text);
 }
 
+.vonnect__customerHome__previousOrders h4{
+  margin: 2rem 1rem;
+  font-size: 18px;
+}

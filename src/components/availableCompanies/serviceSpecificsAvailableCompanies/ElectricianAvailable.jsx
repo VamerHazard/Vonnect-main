@@ -4,7 +4,7 @@ import AvailableCompanies from '../AvailableCompanies'
 const ElectricianAvailable = () => {
   return (
     <div>
-      <AvailableCompanies service='Electrician'/>
+      <AvailableCompanies service='Electricity'/>
     </div>
   )
 }

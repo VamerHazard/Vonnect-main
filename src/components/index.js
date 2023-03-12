@@ -3,6 +3,7 @@ export {default as Load} from './loading/Load.jsx';
 export {default as ProfileEdit} from './profileEdit/ProfileEdit.jsx';
 export {default as ServiceChoice} from './serviceChoice/ServiceChoice.jsx';
 export {default as Topbar} from './topbar/Topbar.jsx';
+export {default as CompanyRatings} from './companyRatings/CompanyRatings.jsx';
 
 /*All the service Pages are exported down below! */
 export {default as Chef} from './serviceSpecifics/Chef.jsx';
@@ -25,7 +26,9 @@ export {default as GardenersAvailable} from './availableCompanies/serviceSpecifi
 export {default as GroceryAvailable} from './availableCompanies/serviceSpecificsAvailableCompanies/GroceryAvailable.jsx';
 export {default as PainterAvailable} from './availableCompanies/serviceSpecificsAvailableCompanies/PainterAvailable.jsx';
 export {default as PlumberAvailable} from './availableCompanies/serviceSpecificsAvailableCompanies/PlumberAvailable.jsx';
-export {default as TutorsAvailable} from './availableCompanies/serviceSpecificsAvailableCompanies/TutorAvailable.jsx';
+export {default as TutorsAvailable} from './availableCompanies/serviceSpecificsAvailableCompanies/TutorsAvailable.jsx';
+
+
 
 
 

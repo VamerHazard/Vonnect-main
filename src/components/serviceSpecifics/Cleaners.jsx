@@ -7,25 +7,25 @@ const cleanerServices = [
   {
     type: 'Professional',
     imgSource: slack,
-    link: '/CleanersAvailable',
+    link: '/Cleaners/CleanersAvailable',
     description: 'Make your house sparkle with the most professional cleaners.'
   },
   {
     type: 'Home',
     imgSource: '',
-    link: '/CleanersAvailable',
+    link: '/Cleaners/CleanersAvailable',
     description: 'Enjoy cleaning from the neighborhood sweepers.'
   },
   {
     type: 'Car Wash',
     imgSource: '',
-    link: '/CleanersAvailable',
+    link: '/Cleaners/CleanersAvailable',
     description: 'Make you car shine.'
   }, 
   {
     type: 'Vegetarian',
     imgSource: '',
-    link: '/CleanersAvailable',
+    link: '/Cleaners/CleanersAvailable',
     description: 'Find vegetarian-based Cleaners in Kathmandu.'
   },
   ]

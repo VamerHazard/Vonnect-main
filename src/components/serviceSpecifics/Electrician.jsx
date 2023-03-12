@@ -7,25 +7,25 @@ const electricianServices = [
   {
     type: 'Professional',
     imgSource: slack,
-    link: '/ElectricianAvailable',
+    link: '/Electrician/ElectricianAvailable',
     description: 'Enjoy five-star cooking from the most trained and experienced chefs in Kathmandu.'
   },
   {
     type: 'Homecook',
     imgSource: '',
-    link: '/ElectricianAvailable',
+    link: '/Electrician/ElectricianAvailable',
     description: 'Eat the friendly neighborhood aunty\'s warm home-cooked meals.'
   },
   {
     type: 'Vegan',
     imgSource: '',
-    link: '/ElectricianAvailable',
+    link: '/Electrician/ElectricianAvailable',
     description: 'Relish upon animal-free products that tempt even the most radical carnivores.'
   }, 
   {
     type: 'Vegetarian',
     imgSource: '',
-    link: '/ElectricianAvailable',
+    link: '/Electrician/ElectricianAvailable',
     description: 'Find vegetarian-based chefs in Kathmandu.'
   },
   ]

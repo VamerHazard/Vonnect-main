@@ -31,29 +31,37 @@ useEffect(()=>{
               <Route path='ChefServices' element={<Chef/>}/>
               <Route path='ChefAvailable' element={<ChefAvailable/>}/>
             </Route>
-            <Route path='/Cleaners' element={<Cleaners/>}>
-              <Route path='/CleanersAvailable' element={<CleanersAvailable/>}/>
+            <Route path='/Cleaners'>
+              <Route path='CleanersServices' element={<Cleaners/>}/>
+              <Route path='CleanersAvailable' element={<CleanersAvailable/>}/>
             </Route>
-            <Route path='/Drivers' element={<Drivers/>}>
-              <Route path='/DriversAvailable' element={<DriversAvailable/>}/>
+            <Route path='/Drivers'>
+              <Route path='DriversServices' element={<Drivers/>}/>
+              <Route path='DriversAvailable' element={<DriversAvailable/>}/>
             </Route>
-            <Route path='/Electrician' element={<Electrician/>}>
-              <Route path='/ElectricianAvailable' element={<ElectricianAvailable/>}/>
+            <Route path='/Electrician'>
+              <Route path='ElectricianServices' element={<Electrician/>}/>
+              <Route path='ElectricianAvailable' element={<ElectricianAvailable/>}/>
             </Route>
-            <Route path='/Gardeners' element={<Gardeners/>}>
-              <Route path='/GardenersAvailable' element={<GardenersAvailable/>}/>
+            <Route path='/Gardeners'>
+              <Route path='GardenersServices' element={<Gardeners/>}/>
+              <Route path='GardenersAvailable' element={<GardenersAvailable/>}/>
             </Route>
-            <Route path='/Grocery' element={<Grocery/>}>
-              <Route path='/GroceryAvailable' element={<GroceryAvailable/>}/>
+            <Route path='/Grocery'>
+              <Route path='GroceryServices' element={<Grocery/>}/>
+              <Route path='GroceryAvailable' element={<GroceryAvailable/>}/>
             </Route>
-            <Route path='/Painter' element={<Painter/>}>
-              <Route path='/PainterAvailable' element={<PainterAvailable/>}/>
+            <Route path='/Painter'>
+              <Route path='PainterServices' element={<Painter/>}/>
+              <Route path='PainterAvailable' element={<PainterAvailable/>}/>
             </Route>
-            <Route path='/Plumber' element={<Plumber/>}>
-              <Route path='/PlumberAvailable' element={<PlumberAvailable/>}/>
+            <Route path='/Plumber'>
+              <Route path='PlumberServices' element={<Plumber/>}/>
+              <Route path='PlumberAvailable' element={<PlumberAvailable/>}/>
             </Route>
-            <Route path='/Tutors' element={<Tutors/>}>
-              <Route path='/TutorsAvailable' element={<TutorsAvailable/>}/>
+            <Route path='/Tutors'>
+              <Route path='TutorsServices' element={<Tutors/>}/>
+              <Route path='TutorsAvailable' element={<TutorsAvailable/>}/>
             </Route>
     </Routes>
    }

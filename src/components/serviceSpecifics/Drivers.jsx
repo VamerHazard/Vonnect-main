@@ -7,31 +7,31 @@ const driverServices = [
   {
     type: 'Van',
     imgSource: slack,
-    link: '/DriverAvailable',
+    link: '/Drivers/DriversAvailable',
     description: 'Enjoy five-star cooking from the most trained and experienced Drivers in Kathmandu.'
   },
   {
     type: 'Truck',
     imgSource: '',
-    link: '/DriverAvailable',
+    link: '/Drivers/DriversAvailable',
     description: 'Each convoy is assured to be delivered safely and on time.'
   },
   {
     type: 'Car',
     imgSource: '',
-    link: '/DriverAvailable',
+    link: '/Drivers/DriversAvailable',
     description: 'Enjoy the comfort of your car with a professional chaffeur.'
   }, 
   {
     type: 'Bike',
     imgSource: '',
-    link: '/DriverAvailable',
+    link: '/Drivers/DriversAvailable',
     description: 'Navigate your way across town with a motorcycle specialist.'
   },
   {
     type: 'Bus',
     imgSource: '',
-    link: '',
+    link: '/Drivers/DriversAvailable',
     description: 'Go on long trips with your friends on a clean bus!'
   }
   ]

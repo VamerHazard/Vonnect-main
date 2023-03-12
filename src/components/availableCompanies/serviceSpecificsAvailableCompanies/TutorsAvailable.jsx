@@ -1,7 +1,7 @@
 import React from 'react'
 import AvailableCompanies from '../AvailableCompanies'
 
-const TutorAvailable = () => {
+const TutorsAvailable = () => {
   return (
     <div>
       <AvailableCompanies service='Tutor'/>
@@ -9,4 +9,4 @@ const TutorAvailable = () => {
   )
 }
 
-export default TutorAvailable
+export default TutorsAvailable

@@ -7,25 +7,25 @@ const tutorsServices = [
   {
     type: 'Professional',
     imgSource: slack,
-    link: '/TutorsAvailable',
+    link: '/Tutors/TutorsAvailable',
     description: 'Enjoy five-star cooking from the most trained and experienced chefs in Kathmandu.'
   },
   {
     type: 'Homecook',
     imgSource: '',
-    link: '/TutorsAvailable',
+    link: '/Tutors/TutorsAvailable',
     description: 'Eat the friendly neighborhood aunty\'s warm home-cooked meals.'
   },
   {
     type: 'Vegan',
     imgSource: '',
-    link: '/TutorsAvailable',
+    link: '/Tutors/TutorsAvailable',
     description: 'Relish upon animal-free products that tempt even the most radical carnivores.'
   }, 
   {
     type: 'Vegetarian',
     imgSource: '',
-    link: '/TutorsAvailable',
+    link: '/Tutors/TutorsAvailable',
     description: 'Find vegetarian-based chefs in Kathmandu.'
   },
   ]
