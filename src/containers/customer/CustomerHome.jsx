@@ -28,7 +28,7 @@ const services = [
   location: '/Tutors', /* /profile */
   imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/classroom.png'},
   {pageName: 'Chef', 
-  location: '/Chef', /* /profile */
+  location: '/Chef/ChefServices', /* /profile */
   imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/chef-hat.png'}
 ]
 

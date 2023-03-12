@@ -7,25 +7,25 @@ const chefServices = [
   {
     type: 'Professional',
     imgSource: slack,
-    link: 'ChefAvailable',
+    link: '/Chef/ChefAvailable',
     description: 'Enjoy five-star cooking from the most trained and experienced chefs in Kathmandu.'
   },
   {
     type: 'Homecook',
     imgSource: '',
-    link: 'ChefAvailable',
+    link: '/Chef/ChefAvailable',
     description: 'Eat the friendly neighborhood aunty\'s warm home-cooked meals.'
   },
   {
     type: 'Vegan',
     imgSource: '',
-    link: 'ChefAvailable',
+    link: '/Chef/ChefAvailable',
     description: 'Relish upon animal-free products that tempt even the most radical carnivores.'
   }, 
   {
     type: 'Vegetarian',
     imgSource: '',
-    link: 'ChefAvailable',
+    link: '/Chef/ChefAvailable',
     description: 'Find vegetarian-based chefs in Kathmandu.'
   },
   ]

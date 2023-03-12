@@ -1,8 +1,11 @@
 import React from 'react'
+import './availableCompanies.css'
+import Food from '../../assets/food.jpeg'
+import Vonnect from '../../assets/vonnect.png'
 
 const companies = [
   {
-    name: 'Vonnect Sample',
+    name: 'Vonnect Sample0',
     location: 'Jawalakhel',
     distance: 4.9,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet sapien neque. Nam scelerisque ante et dui ullamcorper tristique. Pellentesque venenatis tempus volutpat. Mauris venenatis tortor at urna rhoncus,',
@@ -42,7 +45,7 @@ const companies = [
     },
   },
   {
-    name: 'Vonnect Sample2',
+    name: 'Vonnect Sample1',
     location: 'Bhaisepati',
     distance: 5,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet sapien neque. Nam scelerisque ante et dui ullamcorper tristique. Pellentesque venenatis tempus volutpat. Mauris venenatis tortor at urna rhoncus,',
@@ -82,7 +85,7 @@ const companies = [
     },
   },
   {
-    name: 'Vonnect Sample3',
+    name: 'Vonnect Sample2',
     location: 'Jawalakhel',
     distance: 4.9,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet sapien neque. Nam scelerisque ante et dui ullamcorper tristique. Pellentesque venenatis tempus volutpat. Mauris venenatis tortor at urna rhoncus,',
@@ -122,7 +125,7 @@ const companies = [
     },
   },
   {
-    name: 'Vonnect Sample4',
+    name: 'Vonnect Sample3',
     location: 'Outer-Space',
     distance: 9.0,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet sapien neque. Nam scelerisque ante et dui ullamcorper tristique. Pellentesque venenatis tempus volutpat. Mauris venenatis tortor at urna rhoncus,',
@@ -162,13 +165,14 @@ const companies = [
     },
   },
   {
-    name: 'Vonnect Sample',
+    name: 'Vonnect Sample4',
     location: 'Pepsi Cola',
     distance: 3.4,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet sapien neque. Nam scelerisque ante et dui ullamcorper tristique. Pellentesque venenatis tempus volutpat. Mauris venenatis tortor at urna rhoncus,',
     servicesOffered: {
       'Cooking': {
         offered: true,
-        price: 1000
+        price: 1900
       },
       'Cleaning': {
         offered: true,
@@ -245,14 +249,15 @@ const companies = [
 const AvailableCompanies = (props) => {
   return (
     <div>
-      {companies.filter(company => (company.servicesOffered.props.service.offered == true)).map(company => ( 
+      {companies.filter(company => (company.servicesOffered[props.service].offered == true)).map(company => ( 
         <div className='vonnect__available-company'>
-          <div className=''>
-            <div className='header'>
-              <img src='' alt={company.name}/>
-              <img src='' alt={company.name}/>
+          <div className='vonnect__available-company__content'>
+            <div className='vonnect__available-company__header-images'>
+              <img src={Food} alt={company.name}/>
+              <img src={Vonnect} alt={company.name}/>
             </div>
-            <h4>{company.servicesOffered.props.service.price}</h4>
+            <h1 className='gradient__text'>{company.name}</h1>
+            <h4>Price: {company.servicesOffered[props.service].price} Rs</h4>
             <p>{company.location}, {company.distance}km</p>
             <p>{company.description}</p>
           </div>

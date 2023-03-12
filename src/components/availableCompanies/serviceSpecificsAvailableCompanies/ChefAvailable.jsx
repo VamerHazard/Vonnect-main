@@ -3,7 +3,7 @@ import AvailableCompanies from '../AvailableCompanies'
 
 const ChefAvailable = () => {
   return (
-    <div>
+    <div className='IDENJKLEAKLJDHAKLHDAKLHDAS'>
       <AvailableCompanies service='Cooking'/>
     </div>
   )

@@ -19,7 +19,7 @@ useEffect(()=>{
      {loading ? <LoadPage/> 
     : 
     <Routes>
-            <Route path='/*' element={<TypeReg/>}/>  
+            <Route path='/' element={<TypeReg/>}/>  
             <Route path='/CustomerRegistration' element={<CustomerRegistration/>}/>
             <Route path='/CustomerRegistration/:id' element={<CustomerRegistrationOTP/>}/>
             {/*temporary route to component: */} 
@@ -27,7 +27,8 @@ useEffect(()=>{
             <Route path='/home' element={<CustomerHome/>}/>
 
           {/* Service Types: */}
-            <Route path='/Chef' element={<Chef/>}>
+            <Route path='/Chef'>
+              <Route path='ChefServices' element={<Chef/>}/>
               <Route path='ChefAvailable' element={<ChefAvailable/>}/>
             </Route>
             <Route path='/Cleaners' element={<Cleaners/>}>
