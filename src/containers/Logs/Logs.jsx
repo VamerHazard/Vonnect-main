@@ -26,7 +26,7 @@ const Logs = () => {
                 <h4>Price: {object.Price}</h4>
               </div>
               <div className='vonnect__logs__re-quest'>
-                <Link to={`/companyOrder/${object.Service}/${object.name}`}>
+                <Link to={`/companyOrder/${object.Service}/${object.Name}`}>
                   <button>Order Again</button>
                 </Link>
               </div>
