@@ -5,28 +5,28 @@ import slack from '../../assets/slack.png'
 
 const tutorsServices = [
   {
-    type: 'Professional',
+    type: 'Math',
     imgSource: slack,
     link: '/Tutors/TutorsAvailable',
-    description: 'Enjoy five-star cooking from the most trained and experienced chefs in Kathmandu.'
+    description: 'Learn math from a professional teacher with more than 3 years of experience.'
   },
   {
-    type: 'Homecook',
+    type: 'Chemistry',
     imgSource: '',
     link: '/Tutors/TutorsAvailable',
-    description: 'Eat the friendly neighborhood aunty\'s warm home-cooked meals.'
+    description: 'Learn chemistry from a professional teacher with more than 3 years of experience.'
   },
   {
-    type: 'Vegan',
+    type: 'English',
     imgSource: '',
     link: '/Tutors/TutorsAvailable',
-    description: 'Relish upon animal-free products that tempt even the most radical carnivores.'
+    description: 'Learn english from a professional teacher with more than 3 years of experience.'
   }, 
   {
-    type: 'Vegetarian',
+    type: 'Physics',
     imgSource: '',
     link: '/Tutors/TutorsAvailable',
-    description: 'Find vegetarian-based chefs in Kathmandu.'
+    description: 'Learn physics from a professional teacher with more than 3 years of experience.'
   },
   ]
 

@@ -1,0 +1,22 @@
+.vonnect__estimatePrice-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #ccc;
+  width: 100%;
+}
+
+.vonnect__estimatePrice__calculations{
+  display: flex;
+  flex-direction: column;
+}
+
+.vonnect__estimatePrice-container h4{
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+.vonnect__estimatePrice-container p{
+  font-size: 12px;
+}

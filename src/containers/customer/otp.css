@@ -1,4 +1,4 @@
-.vonnect__customerRegistration-container{
+.vonnect__customerRegistrationOTP-container{
   display:flex;
   width: 100vw;
   height: 100vh;
@@ -7,19 +7,20 @@
   align-items: center;
 }
 
-.vonnect__customerRegistration-container__header{
+.vonnect__customerRegistrationOTP-container__header{
  margin-bottom: 2rem;
  text-align: left;
  font-size: 18px;
 }
 
-.vonnect__customerRegistration-container__input{
+.vonnect__customerRegistrationOTP-container__input{
+  display: flex;
   width: 15rem;
   align-items: center;
   justify-content: center;
 }
 
-.vonnect__customerRegistration-container__input input{
+.vonnect__customerRegistrationOTP-container__input input{
   padding: 0.5rem 1rem;
   text-align: center;
   border-color: grey;
@@ -30,8 +31,8 @@
 
 }
 
-.vonnect__customerRegistration-container__btn button{
-    background: var(--gradient-bar);
+.vonnect__customerRegistrationOTP-container__btn button{
+    background: black;
     border-radius: 40px;
     border: none;
     outline: none;
@@ -49,6 +50,9 @@
     
     padding: 0.5rem 1rem;
 }
+
+.vonnect__customerRegistrationOTP-container__btn-color button{
+  background: var(--gradient-bar)}
 
 .vonnect__menuContainer{
   display: flex;

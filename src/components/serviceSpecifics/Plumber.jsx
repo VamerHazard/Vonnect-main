@@ -5,28 +5,28 @@ import slack from '../../assets/slack.png'
 
 const plumberServices = [
   {
-    type: 'Professional',
+    type: 'Leak Fixes',
     imgSource: slack,
     link: '/Plumber/PlumberAvailable',
-    description: 'Enjoy five-star cooking from the most trained and experienced chefs in Kathmandu.'
+    description: 'Fix your leaks with a professional plumber!'
   },
   {
-    type: 'Homecook',
+    type: 'Appliance Installation',
     imgSource: '',
     link: '/Plumber/PlumberAvailable',
-    description: 'Eat the friendly neighborhood aunty\'s warm home-cooked meals.'
+    description: 'Install brand new appliances in your home!'
   },
   {
-    type: 'Vegan',
+    type: 'House Planning',
     imgSource: '',
     link: '/Plumber/PlumberAvailable',
-    description: 'Relish upon animal-free products that tempt even the most radical carnivores.'
+    description: 'Plan out your house\'s plumbing system.'
   }, 
   {
-    type: 'Vegetarian',
+    type: 'Maintenance',
     imgSource: '',
     link: '/Plumber/PlumberAvailable',
-    description: 'Find vegetarian-based chefs in Kathmandu.'
+    description: 'Fix previously applied systems.'
   },
   ]
 

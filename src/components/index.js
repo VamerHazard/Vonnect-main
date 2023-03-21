@@ -4,6 +4,8 @@ export {default as ProfileEdit} from './profileEdit/ProfileEdit.jsx';
 export {default as ServiceChoice} from './serviceChoice/ServiceChoice.jsx';
 export {default as Topbar} from './topbar/Topbar.jsx';
 export {default as CompanyRatings} from './companyRatings/CompanyRatings.jsx';
+export {default as EstimatePrice} from './estimatePrice/EstimatePrice.jsx';
+
 
 /*All the service Pages are exported down below! */
 export {default as Chef} from './serviceSpecifics/Chef.jsx';

@@ -20,21 +20,20 @@ const CustomerRegistrationOTP = () => {
     }
 
   return (
-    <div className = 'vonnect__customerRegistration-container'>
-      <div className='vonnect__customerRegistration-container__header'>
+    <div className = 'vonnect__customerRegistrationOTP-container'>
+      <div className='vonnect__customerRegistrationOTP-container__header'>
       <h1>Verify Number: </h1>
       </div>
-        <div className='vonnect__customerRegistration-container__input'>
+        <div className='vonnect__customerRegistrationOTP-container__input'>
           <input value = {number} onChange={handleChange} afterChange={handleAfterChange} placeholder='OTP-Code'/>
         </div>
-       
-          {limited && (
-           <div className='vonnect__customerRegistration-container__btn'>
+          {/*Button COLOR changer: */}
+           <div className={!limited ? 'vonnect__customerRegistrationOTP-container__btn' : 'vonnect__customerRegistrationOTP-container__btn-color vonnect__customerRegistrationOTP-container__btn'}>
               <Link to='/CustomerRegistration/:id/profileEdit'>
-                <button type='button'>Verify</button>
+                <button type='button'>{!limited ? 'Invalid OTP' : 'Verify'}</button>
               </Link>
           </div>
-          )}
+          
         
     </div>
   )

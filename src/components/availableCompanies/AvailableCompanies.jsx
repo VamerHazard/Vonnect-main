@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import './availableCompanies.css'
 import companies from './companies.jsx'
-import backIcon from '../../assets/back-arrow.png'
+import backIcon from '../../assets/back-arrow.webp'
 import Food from '../../assets/food.jpeg'
 import Vonnect from '../../assets/vonnect.png'
 import CompanyRatings from '../companyRatings/CompanyRatings'
@@ -17,6 +17,18 @@ const AvailableCompanies = (props) => {
   const [priceTag, setPriceTag] = useState(true);
   const [ratingTag, setRatingTag] = useState(false);
   const [distanceTag, setDistanceTag] = useState(false);
+
+  const sortByTag = (tag) => {
+      let sortedCompanies = [...companions]; // make a copy of the original array
+      if (tag === 'price') {
+        sortedCompanies.sort((a, b) => a.servicesOffered[props.service][tag] - b.servicesOffered[props.service][tag]);
+      } else if (tag === 'distance') {
+        sortedCompanies.sort((a, b) => a[tag] - b[tag]);
+      } else {
+        sortedCompanies.sort((a, b) => b[tag] - a[tag]);
+      }
+      setCompanions(sortedCompanies);
+  }    
 
   const getReorderedArray = (input) => {
     if (!input) {
@@ -48,27 +60,29 @@ const AvailableCompanies = (props) => {
       </div>
       {menu ? (
           <div className='vonnect__available-company-tags'>
-            <button onClick={()=>{setPriceTag(!priceTag); setDistanceTag(false); setRatingTag(false)}}>Price {priceTag ? (<img src={Checkmark}/>) : <div/>}</button> 
-            <button onClick={()=>{setPriceTag(false); setDistanceTag(!distanceTag); setRatingTag(false)}}>Rating {distanceTag ? (<img src={Checkmark}/>) : <div/>}</button>
-            <button onClick={()=>{setPriceTag(false); setDistanceTag(false); setRatingTag(!ratingTag)}}>Distance {ratingTag ? (<img src={Checkmark}/>) : <div/>}</button>
+            <button onClick={()=>{setPriceTag(!priceTag); setDistanceTag(false); setRatingTag(false); sortByTag('price');}}>Price {priceTag ? (<img src={Checkmark} alt='Check'/>) : <div/>}</button> 
+            <button onClick={()=>{setPriceTag(false); setDistanceTag(!distanceTag); setRatingTag(false); sortByTag('distance');}}>Distance {distanceTag ? (<img src={Checkmark} alt='Check'/>) : <div/>}</button>
+            <button onClick={()=>{setPriceTag(false); setDistanceTag(false); setRatingTag(!ratingTag); sortByTag('rating');}}>Rating {ratingTag ? (<img src={Checkmark} alt='Check'/>) : <div/>}</button>
           </div>): <div></div>}
       <h4>{input}</h4>
       {reorderedArray.filter(company => (company.servicesOffered[props.service].offered === true)).map(company => ( 
-        <div className='vonnect__available-company'>
+       <Link to={`/companyOrder/${props.service}/${company.name}`}>
+        <div className='vonnect__available-company' key={`${company.name}`}>
           <div className='vonnect__available-company__content'>
-            <div className='vonnect__available-company__header-images'>
-              <img src={Food} alt={company.name}/>
-              <img src={Vonnect} alt={company.name}/>
+              <div className='vonnect__available-company__header-images'>
+               <img src={Food} alt={company.name}/>
+               <img src={Vonnect} alt={company.name}/>
+              </div>
+              <h1 className='gradient__text'>{company.name}</h1>
+              <div className='vonnect__available-company__determinants'>
+                <h4>Price: {company.servicesOffered[props.service].price} Rs</h4> 
+                <CompanyRatings value={company.rating}/>
+              </div>
+              <p>{company.location}, {company.distance}km</p>
+              <p>{company.description}</p>
             </div>
-            <h1 className='gradient__text'>{company.name}</h1>
-            <div className='vonnect__available-company__determinants'>
-              <h4>Price: {company.servicesOffered[props.service].price} Rs</h4> 
-              <CompanyRatings value={company.rating}/>
-            </div>
-            <p>{company.location}, {company.distance}km</p>
-            <p>{company.description}</p>
           </div>
-        </div>
+        </Link> 
       ))}
     </div>
   )

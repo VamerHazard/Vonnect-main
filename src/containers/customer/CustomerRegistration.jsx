@@ -25,14 +25,13 @@ const CustomerRegistration = () => {
           <img src={nepalFlag} alt='nepalFlag'/>
           <input type='number' onChange={handleChange} placeholder='Phone-Number' maxLength={10}/>
         </div>
-        <div className={classNames('vonnect__customerRegistration-container__btn',{
-        'vonnect__customerRegistration-container__btn-color': limited})}>
+        <div className={ !limited ? 'vonnect__customerRegistration-container__btn' : 
+       'vonnect__customerRegistration-container__btn-color vonnect__customerRegistration-container__btn '}>
         <Link to={`/CustomerRegistration/${number}`}>
-          <button type='button'>Submit</button>
+          <button type='button'>{!limited ? 'Invalid number' : 'Submit'}</button>
         </Link>
       </div>
     </div>
   )
 }
-
 export default CustomerRegistration

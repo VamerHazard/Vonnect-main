@@ -1,19 +1,130 @@
-.vonnect__customerHome__content{
-  padding-top: 60px;
-}
-
-.vonnect__customerHome__services {
+.vonnect__logs__services {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
-.vonnect__customerHome__content h4{
+.vonnect__logs__topbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.vonnect__logs__content h4{
   padding-left: 11px;
   font-size: 18px;
   font-weight: 600;
   font-family: var(--font-family);
   color: var(gradient__text);
+}
+
+.vonnect__logs__log:first-child{
+  margin-top: 50px;
+}
+
+.vonnect__logs__log {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.vonnect__logs__log p:first-child{
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #ccc;
+}
+
+.vonnect__logs__log-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.vonnect__logs__log-header h3 {
+  margin: 0;
+  color: var(gradient__text);
+  background: var(--gradient-text-new);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.vonnect__logs__log-header p {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.vonnect__logs__log-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vonnect__logs__log-price h4{
+font-size: 16px;
+}
+
+.vonnect__logs__re-quest{
+  display: flex;
+  border-top: 1px solid #ccc;
+  justify-content: center;
+}
+
+/* CSS */
+.vonnect__logs__re-quest button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid transparent/*rgba(0, 0, 0, 0.1)*/;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.vonnect__logs__re-quest button:hover,
+.vonnect__logs__re-quest button:focus {
+  /* border-color: rgba(0, 0, 0, 0.15); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.vonnect__logs__re-quest button:hover {
+  transform: translateY(-1px);
+}
+
+.vonnect__logs__re-quest button:active {
+  background-color: #F0F0F1;
+  /* border-color: rgba(0, 0, 0, 0.15); */
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
 }
 

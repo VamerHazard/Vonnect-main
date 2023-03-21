@@ -5,13 +5,13 @@ import slack from '../../assets/slack.png'
 
 const cleanerServices = [
   {
-    type: 'Professional',
+    type: 'Professional Cleaners',
     imgSource: slack,
     link: '/Cleaners/CleanersAvailable',
-    description: 'Make your house sparkle with the most professional cleaners.'
+    description: 'Make your house sparkle with the most professional equipment.'
   },
   {
-    type: 'Home',
+    type: 'Home Cleaners',
     imgSource: '',
     link: '/Cleaners/CleanersAvailable',
     description: 'Enjoy cleaning from the neighborhood sweepers.'
@@ -23,7 +23,7 @@ const cleanerServices = [
     description: 'Make you car shine.'
   }, 
   {
-    type: 'Vegetarian',
+    type: 'Sanitizers',
     imgSource: '',
     link: '/Cleaners/CleanersAvailable',
     description: 'Find vegetarian-based Cleaners in Kathmandu.'

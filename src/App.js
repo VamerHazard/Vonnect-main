@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import {LoadPage, TypeReg, CustomerRegistration, CompanyRegistration, CustomerRegistrationOTP, CustomerHome} from './containers';
+import {LoadPage, TypeReg, CustomerRegistration, CompanyRegistration, CustomerRegistrationOTP, CustomerHome, CompanyView, Logs} from './containers';
 import {ProfileEdit, Chef, Cleaners, Drivers, Electrician, Gardeners, Grocery, Painter, Plumber, Tutors} from './components';
 import {ChefAvailable, CleanersAvailable, DriversAvailable, ElectricianAvailable, GardenersAvailable, GroceryAvailable, PainterAvailable, PlumberAvailable, TutorsAvailable, ServiceAvailable} from './components'
 import './App.css';
-import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 const App = () => {
 
@@ -11,7 +11,7 @@ const [loading, setloading] = useState(false);
 
 useEffect(()=>{
   setloading(true)
-  setTimeout(()=>{setloading(false)}, 1000) /*change later */
+  setTimeout(()=>{setloading(false)}, 1500) /*change later */
 }, []);
 
   return (
@@ -63,6 +63,8 @@ useEffect(()=>{
               <Route path='TutorsServices' element={<Tutors/>}/>
               <Route path='TutorsAvailable' element={<TutorsAvailable/>}/>
             </Route>
+            <Route path='/companyOrder/:service/:companyName' element={<CompanyView/>}/>
+            <Route path='/logs' element={<Logs/>}/>
     </Routes>
    }
     </div>

@@ -1,0 +1,217 @@
+.vonnect__companyView-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.vonnect__companyView-backarrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  z-index: 9999;
+  filter: invert(100%);
+}
+
+.vonnect__companyView-backarrow img {
+  width: 100%;
+  height: 100%;
+}
+
+.vonnect__companyView__header-images{
+  height: 245px;
+  position: relative;
+  overflow: visible;
+}
+
+.vonnect__companyView__header-images img:first-child{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.vonnect__companyView__header-images img:last-child{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, 30%);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.vonnect__companyView__header-description{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.vonnect__companyView__header-description p{
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 0;
+}
+
+.vonnect__companyView__sampleRating-description p{
+margin: 1rem;
+}
+
+.vonnect__companyView__header-description-info{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100%;
+}
+
+.vonnect__companyView__header-description-info p{
+  margin: 0 0.25rem 0 1.5rem;
+}
+
+.vonnect__companyView__header-description h1{
+  margin-left: 1rem;
+}
+
+.vonnect__companyView__distance{
+  display: flex;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vonnect__companyView__distance p{
+color: grey;
+font-size: 14px;
+}
+
+.vonnect__companyView__distance img{
+  width: 15px;
+  height: 15px;
+}
+
+.vonnect__companyView__determinant-btn{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 2px solid #ccc;
+  justify-content: space-around;
+}
+
+/* CSS */
+.vonnect__companyView__determinant-btn button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: calc(100vw/2);
+}
+
+.vonnect__companyView__determinant-btn button:hover,
+.vonnect__companyView__determinant-btn button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: black;
+  background-color: lightgray;
+}
+
+.vonnect__companyView__determinant-btn button:hover {
+  transform: translateY(-1px);
+}
+
+.vonnect__companyView__determinant-btn button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+/*Ratings Related things:*/
+
+.vonnect__companyView__person{
+  display: flex;
+  flex-direction: column;
+}
+
+.vonnect__companyView__person div:last-child{
+  margin-left: 0.3rem;
+}
+
+.vonnect__companyView__sampleRating{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  margin: 0.3rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+}
+.vonnect__companyView__sampleRating-personDetails{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vonnect__companyView__sampleRating-personDetails img{
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  margin: 0 0.3rem 0 0.5rem;
+}
+
+.vonnect__companyView__sampleRating p:last-child{
+  padding: 0.6rem;
+}
+
+/*order related stuff*/
+.vonnect__companyView__order{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+.vonnect__companyView__order button{
+    background: var(--gradient-bar);
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 100px;
+    margin: 1rem 0 1rem 0;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    /*text stuff:*/
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height:20px;
+    font-weight: 500;
+    color: white;
+    
+    padding: 0.5rem 1rem;
+}
+
+

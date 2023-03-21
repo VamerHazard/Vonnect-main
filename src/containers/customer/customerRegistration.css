@@ -19,6 +19,7 @@
   display: row;
   width: 15rem;
   align-items: center;
+  justify-content: center;
 }
 
 .vonnect__customerRegistration-container__input input{
@@ -48,6 +49,7 @@
     min-width: 100px;
     margin: 2rem;
     align-items: center;
+    justify-content: center;
   
     /*text stuff:*/
     font-family: var(--font-family);
@@ -78,3 +80,5 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+

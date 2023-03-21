@@ -12,7 +12,7 @@ const items = [
   location: '/home', /* /home */
   imgSource: homeIcon},
   {pageName: 'logs', 
-  location: '', /* /logs */
+  location: '/logs', /* /logs */
   imgSource: logsIcon},
   {pageName: 'customerSupport', 
   location: '', /* /customerSupport */

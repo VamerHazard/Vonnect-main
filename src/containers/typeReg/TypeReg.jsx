@@ -7,7 +7,7 @@ const typeReg = () => {
     <div>
       <div className='typeReg__container section__padding'>
         <div className='typeReg__container__header'>
-          <h1>What are you?</h1>
+          <h1>Who are you?</h1>
         </div>
         <div className='typeReg__container__btn'>
           <Link to='/CustomerRegistration'>

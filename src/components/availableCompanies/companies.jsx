@@ -37,6 +37,10 @@ const companies = [
       'Plumber':  {
         offered: false,
         price: undefined
+      },
+      'Tutor': {
+        offered: true,
+        price: 1000
       }
     },
   },
@@ -78,6 +82,10 @@ const companies = [
       'Plumber': {
         offered: false,
         price: undefined
+      },
+      'Tutor': {
+        offered: true,
+        price: 1000
       }
     },
   },
@@ -119,6 +127,10 @@ const companies = [
       'Plumber':  {
         offered: false,
         price: undefined
+      },
+      'Tutor': {
+        offered: true,
+        price: 1000
       }
     },
   },
@@ -160,6 +172,10 @@ const companies = [
       'Plumber': {
         offered: true,
         price: 1100
+      },
+      'Tutor': {
+        offered: true,
+        price: 1000
       }
     },
   },
@@ -201,6 +217,10 @@ const companies = [
       'Plumber':  {
         offered: false,
         price: undefined
+      },
+      'Tutor': {
+        offered: true,
+        price: 1000
       }
     },
   },
@@ -242,6 +262,10 @@ const companies = [
       'Plumber': {
         offered: false,
         price: undefined
+      },
+      'Tutor': {
+        offered: true,
+        price: 1000
       }
     },
   }
