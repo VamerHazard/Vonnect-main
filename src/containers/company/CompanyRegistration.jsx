@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
+import food from '../../food.jpeg'
 
 const CompanyRegistration = () => {
+ 
   return (
     <div>
-      Hey there
+      <div className='vonnect__companyRegistration__header'>
+      </div>
     </div>
   )
 }
