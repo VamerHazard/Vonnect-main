@@ -70,7 +70,7 @@ const AvailableCompanies = (props) => {
         <div className='vonnect__available-company' key={`${company.name}`}>
           <div className='vonnect__available-company__content'>
               <div className='vonnect__available-company__header-images'>
-               <img src={Food} alt={company.name}/>
+               <img src={company.servicesOffered[props.service].picture} alt={company.name}/>
                <img src={Vonnect} alt={company.name}/>
               </div>
               <h1 className='gradient__text'>{company.name}</h1>

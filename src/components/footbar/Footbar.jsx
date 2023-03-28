@@ -15,10 +15,10 @@ const items = [
   location: '/logs', /* /logs */
   imgSource: logsIcon},
   {pageName: 'customerSupport', 
-  location: '', /* /customerSupport */
+  location: '/CustomerSupport', /* /customerSupport */
   imgSource: customerSupportIcon},
   {pageName: 'profile', 
-  location: '', /* /profile */
+  location: '/profile', /* /profile */
   imgSource: profileIcon}
 ]
 

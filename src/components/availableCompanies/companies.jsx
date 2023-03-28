@@ -1,3 +1,6 @@
+import {cleaning, drivers, electrician, gardeners, groceries, painters, plumbers, tutors} from '../../assets/companyBackgrounds'
+import food from '../../assets/food.jpeg'
+
 const companies = [
   {
     name: 'Vonnect Sample0',
@@ -8,39 +11,48 @@ const companies = [
     servicesOffered: {
       'Cooking':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: food,
       },
       'Cleaning':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: cleaning,
       },
       'Driving':  {
         offered: true,
-        price: 600
+        price: 600,
+        picture: drivers
       },
       'Electricity':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: electrician
       },
       'Gardeners':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: gardeners
       },
       'Grocery': {
         offered: true,
-        price: 10
+        price: 10,
+        picture: groceries
       },
       'Painter':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: painters
       },
       'Plumber':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: plumbers
       },
       'Tutor': {
         offered: true,
-        price: 1000
+        price: 1000,
+        picture: tutors
       }
     },
   },
@@ -53,39 +65,48 @@ const companies = [
     servicesOffered: {
       'Cooking': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: food,
       },
       'Cleaning': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: cleaning,
       },
       'Driving': {
         offered: true,
-        price: 600
+        price: 600,
+        picture: drivers
       },
       'Electricity': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: electrician
       },
       'Gardeners': {
         offered: true,
-        price: 890
+        price: 890,
+        picture: gardeners
       },
       'Grocery': {
         offered: true,
-        price: 10
+        price: 10,
+        picture: groceries
       },
       'Painter': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: painters
       },
       'Plumber': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: plumbers
       },
       'Tutor': {
         offered: true,
-        price: 1000
+        price: 1000,
+        picture: tutors
       }
     },
   },
@@ -98,39 +119,48 @@ const companies = [
     servicesOffered: {
       'Cooking':  {
         offered: true,
-        price: 1000
+        price: 1000,
+        picture: food,
       },
       'Cleaning':  {
         offered: true,
-        price: 1200
+        price: 1200,
+        picture: cleaning,
       },
       'Driving': {
         offered: true,
-        price: 2000
+        price: 2000,
+        picture: drivers
       },
       'Electricity':  {
         offered: true,
-        price: 900
+        price: 900,
+        picture: electrician
       },
       'Gardeners':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: gardeners
       },
       'Grocery': {
         offered: true,
-        price: 14
+        price: 14,
+        picture: groceries
       },
       'Painter':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: painters
       },
       'Plumber':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: plumbers
       },
       'Tutor': {
         offered: true,
-        price: 1000
+        price: 1000,
+        picture: tutors
       }
     },
   },
@@ -143,39 +173,48 @@ const companies = [
     servicesOffered: {
       'Cooking':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: food,
       },
       'Cleaning':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: cleaning,
       },
       'Driving':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: drivers
       },
       'Electricity':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: electrician
       },
       'Gardeners':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: gardeners
       },
       'Grocery':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: groceries
       },
       'Painter': {
         offered: true,
-        price: 600
+        price: 600,
+        picture: painters
       },
       'Plumber': {
         offered: true,
-        price: 1100
+        price: 1100,
+        picture: plumbers
       },
       'Tutor': {
         offered: true,
-        price: 1000
+        price: 1000,
+        picture: tutors
       }
     },
   },
@@ -188,39 +227,48 @@ const companies = [
     servicesOffered: {
       'Cooking': {
         offered: true,
-        price: 1900
+        price: 1900,
+        picture: food,
       },
       'Cleaning': {
         offered: true,
-        price: 1200
+        price: 1200,
+        picture: cleaning,
       },
       'Driving': {
         offered: true,
-        price: 2000
+        price: 2000,
+        picture: drivers
       },
       'Electricity': {
         offered: true,
-        price: 1000
+        price: 1000,
+        picture: electrician
       },
       'Gardeners':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: gardeners
       },
       'Grocery': {
         offered: true,
-        price: 9
+        price: 9,
+        picture: groceries
       },
       'Painter': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: painters
       },
       'Plumber':  {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: plumbers
       },
       'Tutor': {
         offered: true,
-        price: 1000
+        price: 1000,
+        picture: tutors
       }
     },
   },
@@ -233,39 +281,48 @@ const companies = [
     servicesOffered: {
       'Cooking': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: food,
       },
       'Cleaning': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: cleaning,
       },
       'Driving': {
         offered: true,
-        price: 1450
+        price: 1450,
+        picture: drivers
       },
       'Electricity': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: electrician
       },
       'Gardeners': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: gardeners
       },
       'Grocery': {
         offered: true,
-        price: 13
+        price: 13,
+        picture: groceries
       },
       'Painter': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: painters
       },
       'Plumber': {
         offered: false,
-        price: undefined
+        price: undefined,
+        picture: plumbers
       },
       'Tutor': {
         offered: true,
-        price: 1000
+        price: 1000,
+        picture: tutors
       }
     },
   }

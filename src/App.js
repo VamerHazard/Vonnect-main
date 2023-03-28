@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {LoadPage, TypeReg, CustomerRegistration, CompanyRegistration, CustomerRegistrationOTP, CustomerHome, CompanyView, Logs} from './containers';
+import {LoadPage, TypeReg, CustomerRegistration, CompanyRegistration, CustomerRegistrationOTP, CustomerHome, CompanyView, Logs, CustomerSupport} from './containers';
 import {ProfileEdit, Chef, Cleaners, Drivers, Electrician, Gardeners, Grocery, Painter, Plumber, Tutors} from './components';
 import {ChefAvailable, CleanersAvailable, DriversAvailable, ElectricianAvailable, GardenersAvailable, GroceryAvailable, PainterAvailable, PlumberAvailable, TutorsAvailable, ServiceAvailable} from './components'
 import './App.css';
@@ -25,6 +25,7 @@ useEffect(()=>{
             {/*temporary route to component: */} 
             <Route path='/CustomerRegistration/:id/profileEdit' element={<ProfileEdit/>}/>
             <Route path='/home' element={<CustomerHome/>}/>
+            <Route path='/CustomerSupport' element={<CustomerSupport/>}/>
 
           {/* Service Types: */}
             <Route path='/Chef'>

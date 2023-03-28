@@ -6,8 +6,6 @@ import CompanyRatings from '../../components/companyRatings/CompanyRatings'
 import Person from '../../assets/profileIcon.png'
 import EstimatePrice from '../../components/estimatePrice/EstimatePrice.jsx'
 import logsArray from '../logs/logsArray.jsx'
-
-import Food from '../../assets/food.jpeg'
 import Cook from '../../assets/cook.jpeg'
 import LocationIcon from '../../assets/location.png'
 import backArrow from '../../assets/back-arrow.webp'
@@ -31,7 +29,7 @@ const CompanyView = (props) => {
         <img onClick={() => (navigate(-1))} src={backArrow} alt='back'/>
       </div>
       <div className='vonnect__companyView__header-images'>
-        <img src={Food} alt='Company View header Banner'/>
+        <img src={serviceDetails.picture} alt='Company View header Banner'/> {/*changing this */}
         <img src={Cook} alt='Company View Header Profile'/>
       </div>
       <div className='vonnect__companyView__header-description'>

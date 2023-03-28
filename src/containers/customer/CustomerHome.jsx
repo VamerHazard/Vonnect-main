@@ -2,39 +2,41 @@ import React from 'react';
 import {CompanyRatings, Footbar, ServiceChoice, Topbar} from '../../components';
 import './customerHome.css'
 import logsArray from '../logs/logsArray';
-import Food from '../../assets/food.jpeg'
+
 import Vonnect from '../../assets/vonnect.png'
 import companies from '../../components/availableCompanies/companies';
 import { Link } from 'react-router-dom';
 
+import {chefIcon, cleanerIcon, driverIcon, electricianIcon, gardenerIcon, grocerIcon, painterIcon, plumberIcon, tutorIcon} from '../../assets/serviceIcons/'
+
 const services = [
   {pageName: 'Plumbing', 
   location: '/Plumber/PlumberServices', /* /home */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/plumbing.png'},
+  imgSource: plumberIcon},
   {pageName: 'Cleaning', 
   location: '/Cleaners/CleanersServices', /* /logs */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/housekeeping.png'},
+  imgSource: cleanerIcon},
   {pageName: 'Painter', 
   location: '/Painter/PainterServices', /* /customerSupport */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/light-off.png'},
+  imgSource: painterIcon},
   {pageName: 'Gardeners', 
   location: '/Gardeners/GardenersServices', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/garden-shears.png'},
+  imgSource: gardenerIcon},
   {pageName: 'Grocery', 
   location: '/Grocery/GroceryServices', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'},
+  imgSource: grocerIcon},
   {pageName: 'Electrician', 
   location: '/Electrician/ElectricianServices', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'},
+  imgSource: electricianIcon},
   {pageName: 'Drivers', 
   location: '/Drivers/DriversServices', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/ingredients.png'},
+  imgSource: driverIcon},
   {pageName: 'Tutors', 
   location: '/Tutors/TutorsServices', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/classroom.png'},
+  imgSource: tutorIcon},
   {pageName: 'Chef', 
   location: '/Chef/ChefServices', /* /profile */
-  imgSource: 'https://img.icons8.com/nolan/96/1A6DFF/C822FF/chef-hat.png'}
+  imgSource: chefIcon}
 ]
 
 
@@ -56,7 +58,7 @@ const CustomerHome = () => {
               <div className='vonnect__company-preview' key={`${companies.find(c => (c.name === logsArray[0].Name)).name}`}>
                 <div className='vonnect__company-preview__content'>
                   <div className='vonnect__company-preview__header-images'>
-                    <img src={Food} alt={companies.find(c => (c.name === logsArray[0].Name)).name}/>
+                    <img src={companies.find(c => (c.name === logsArray[0].Name)).servicesOffered[logsArray[0].Service].picture} alt={companies.find(c => (c.name === logsArray[0].Name)).name}/>
                     <img src={Vonnect} alt={companies.find(c => (c.name === logsArray[0].Name)).name}/>
                   </div>
                   <h1 className='gradient__text'>{companies.find(c => (c.name === logsArray[0].Name)).name}</h1>

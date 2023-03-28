@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import food from '../../food.jpeg'
+import food from '../../assets/food.jpeg'
 
 const CompanyRegistration = () => {
  
